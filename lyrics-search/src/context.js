@@ -9,7 +9,7 @@ export class Provider extends Component {
 
     componentDidMount(){
         axios.get(
-            `https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/chart.tracks.get?page=1&page_size=10&country=in&f_has_lyrics=1
+            `https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/chart.tracks.get?page=1&page_size=10&country=us&f_has_lyrics=1
             &apikey=f914ec3227b0b2fc3ccadd896cbf5716`)
          .then(
              res => {

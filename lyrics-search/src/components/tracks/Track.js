@@ -8,15 +8,17 @@ const Track = (props) => {
             <div className="card mb-4 shadow-sm">
                 <div className="card-body">
                   <h5>{track.artist_name}</h5>  
-                  <p className = "card-text">
+                  <p className="card-text">
                     <strong>
-                        <i className="fas fa-play"></i> Track
-                    </strong>:{track.track_name}
-                    <br/>
+                     <i className="fas fa-play" /> Track
+                     </strong>
+                     : {track.track_name}
+                    <br />
                     <strong>
-                        <i className="fas fa-compact-disc"></i> Track
-                    </strong>:{track.track_album_name}
-                  </p>
+                       <i className="fas fa-compact-disc" /> Album
+                    </strong>
+                    : {track.album_name}
+                     </p>
                   <Link to ={`lyrics/track/${track.track_id}`}
                    className="btn btn-dark btn-block">
                       < i className="fas fa-chevron-right"></i> View Lyrics
